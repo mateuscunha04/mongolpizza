@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongol Pizza</title>
+    <link rel="stylesheet" href="reset/reset.css">
+    <link rel="shortcut icon" href="mongolpizza.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik&display=swap" rel="stylesheet">
+    <style>
+        a, p, h1, li{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+        }
+
+        body{
+            width: 100%;
+            height:100%;
+        }
+
+        nav, main, footer{
+            overflow-x: hidden;
+        }
+
+        nav{
+            background-color: rgb(140, 0, 0);
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 35px;
+            padding: 40px 0 40px 0;
+            width: 100%;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: rgb(222,222, 0);
+        }
+
+        #location, #redes{
+            padding: 35px;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(22, 87, 142);
+            align-items: center;
+            gap: 30px;
+            color: white;
+            font-size: 45px;
+        }
+
+        #redes{
+            justify-content: space-evenly;
+            background-color: rgb(17, 77, 122);
+        }
+
+        .infos > a{
+            font-size: 35px;
+            color: white;
+            text-decoration: none;
+        }
+
+        main{
+            padding-bottom: 55px;
+        }
+
+        .infos > img {
+            height: 40px;
+            width: auto;
+        }
+
+        .infos{
+            gap: 22px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            padding: 60px;
+            padding-bottom: 120px;
+        }
+
+        .categorias, main > h1{
+            display: flex;
+            margin-left: 25%;    
+        }
+
+        main > h1{
+            font-size: 70px;
+            color: rgb( 200, 200, 0);
+        }
+
+        li{
+            font-size: 35px;
+            list-style-type:disc;
+        }
+
+        ul{
+            gap: 28px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        li > p{
+            padding-top: 5px;
+            font-size: 20px;
+            color: rgb(170, 170, 170);
+        }
+
+        #grupoimg{
+            width: 300px; height: auto; border-radius: 4%;
+        }
+
+        #logo{
+            width: 12%; height: auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav {
+                width: 100%;
+                font-size: 10px;
+                padding: 20px 0;
+            }
+
+            #redes{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 18px;
+            }
+
+            .infos > a{
+                font-size: 20px;
+            }
+
+            .infos > img{
+                width: 30px;
+                height: auto;
+            }
+
+            #location > p{
+                font-size: 20px;
+                line-height: 1.25;
+            }
+
+            #location{
+                padding: 20px;
+            }
+
+            #logo{
+                width: 15%;
+                height: auto;
+            }
+
+            main{
+                margin-bottom: 25px;
+                gap: 25px;
+                padding: 30px;
+            }
+
+            main > h1{
+                font-size: 30px;
+            }
+
+            li{
+                font-size: 18px;
+                list-style-type:disc;
+            }
+
+            ul{
+                gap: 12px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            li > p{
+                padding-top: 2px;
+                font-size: 10px;
+                color: rgb(170, 170, 170);
+            }
+
+            .categorias, main > h1{
+                display: flex;
+                margin-left: 15%;    
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://maps.app.goo.gl/MnjQM3hsbDua4KXw7">LOCALIZAÇÃO</a>
+        <img src="mongolpizza.png" id="logo">
+        <a href="mainpage.html">PÁGINA PRINCIPAL</a>
+    </nav>
+    <main>
+        <h1>Queridinhas da galera</h1>
+        <div class="categorias">
+            <ul>
+                <li>Calabresa <p>mussarela, calabresa, salsinha</p></li>
+                <li>Mignon com catupiry <p>mussarela, calabresa, salsinha</p></li>
+                <li>Quatro queijos <p>mussarela, calabresa, salsinha</p></li>
+                <li>Bacon <p>mussarela, calabresa, salsinha</p></li>
+                <li>Frango com catupiry <p>mussarela, calabresa, salsinha</p></li>
+            </ul>
+        </div>
+        <h1>Nações conquistadas</h1>
+        <div class="categorias">
+            <ul>
+                <li>K-pizza <p>mussarela, calabresa, salsinha</p></li>
+                <li>Inverno Russo <p>mussarela, calabresa, salsinha</p></li>
+                <li>Persa <p>mussarela, calabresa, salsinha</p></li>
+                <li>Muralha da China <p>mussarela, calabresa, salsinha</p></li>
+            </ul>
+        </div>
+        <h1>Típicas</h1>
+        <div class="categorias">
+            <ul>
+                <li>Gengis Khan <p>mussarela, calabresa, salsinha</p></li>
+                <li>Mongol bovino <p>mussarela, calabresa, salsinha</p></li>
+                <li>Goat acebolado <p>mussarela, calabresa, salsinha</p></li>
+                <li>Carne seca <p>mussarela, calabresa, salsinha</p></li>
+            </ul>
+        </div>
+    </main>
+    <footer id="baixo">
+        <div id="location">
+            <img src="location.png" alt="">
+            <p>222, Av. Getúlio Vargas, Centro de Piraquara.</p>
+        </div>
+        <div id="redes">
+            <div class="infos">
+                <img src="instagram.png" alt="">
+                <a href="www.instagram.com">pizzariamongol</a>
+            </div>
+            <div class="infos">
+                <img src="facebook.png" alt="">
+                <a href="www.facebook.com">Mongol Pizza</a>
+            </div>
+            <div class="infos">
+                <img src="whatsapp.png" alt="">
+                <a href="">(41) 98881-0610</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
